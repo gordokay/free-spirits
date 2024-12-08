@@ -55,11 +55,13 @@ nav > ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
-li {
+nav li {
     list-style: none;
 }
+
 
 a {
     text-decoration: none;
@@ -76,7 +78,7 @@ a {
 }
 
 .header-line {
-    width: 65%;
+    width: 60%;
     height: 1px;
     background-color: var(--light);
     margin-top: 4px;
@@ -86,6 +88,7 @@ h1 {
     font-family: var(--display-font);
     font-size: 2.5rem;
     letter-spacing: normal;
+    text-align: center;
 }
 
 main {

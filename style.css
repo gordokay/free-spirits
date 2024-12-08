@@ -14,10 +14,10 @@
 
 body {
     height: 100vh;
+    font-size: 14px;
     background-color: var(--dark);
     font-family: var(--body-font);
-    font-size: 14px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: var(--light);
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ nav li a {
 }
 
 nav li:hover a {
-    bottom: 3px;
+    bottom: 2px;
 }
 
 a {
@@ -148,11 +148,76 @@ aside .icon {
 }
 
 .contact-main {
-    margin-top: 64px;
-    width: 60%;
+    margin-top: 76px;
+    width: 70%;
     display: flex;
+    gap: 64px;
 }
 
-.contact-main > div > * {
+.contact-main > div {
+    width: 35%;
+    padding-top: 64px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+form {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin-bottom: 16px;
+}
+
+form > div:first-child {
+    display: flex;
+    gap: 24px;
+}
+
+form > div:first-child > * {
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: var(--light);
+    background-color: var(--dark);
+    border: 1px solid var(--mid);
+    width: 100%;
+    padding-left: 8px;
+}
+
+input {
+    height: 28px;
+}
+
+form button {
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    background-color: var(--mid);
+    border: none;
+    letter-spacing: 0.1em;
+    color: var(--light);
+    margin-top: 24px;
+    align-self: flex-end;
+    width: fit-content;
+    padding: 12px;
+    transition: all 300ms;
+}
+
+form button:hover {
+    cursor: pointer;
+    margin-top: 22px;
 }

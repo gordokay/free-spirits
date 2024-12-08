@@ -62,6 +62,15 @@ nav li {
     list-style: none;
 }
 
+nav li a {
+    position: relative;
+    bottom: 0px;
+    transition: all 250ms;
+}
+
+nav li:hover a {
+    bottom: 3px;
+}
 
 a {
     text-decoration: none;
@@ -113,8 +122,13 @@ main {
     font-size: 18px;
 }
 
+.main-button > a:hover > .icon {
+    margin-left: 16px;
+}
+
 .main-button .icon {
     margin-top: 2px;
+    transition: all 400ms;
 }
 
 .icon {

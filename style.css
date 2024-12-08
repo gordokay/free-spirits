@@ -97,15 +97,21 @@ h1 {
     font-family: var(--display-font);
     font-size: 2.5rem;
     letter-spacing: normal;
-    text-align: center;
 }
 
 main {
+    flex-grow: 1;
+}
+
+.hero h1 {
+    text-align: center;
+}
+
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     margin-top: -32px;
 }
 
@@ -139,4 +145,14 @@ aside .icon {
     position: fixed;
     right: 64px;
     bottom: 64px;
+}
+
+.contact-main {
+    margin-top: 64px;
+    width: 60%;
+    display: flex;
+}
+
+.contact-main > div > * {
+    width: 50%;
 }
